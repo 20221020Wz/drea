@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.site-layout-content {
+  padding: 24px;
+  background: #fff;
+  min-height: calc(100vh - 64px - 70px);
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ant-layout-header {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.header-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.table-operations {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.table-operations .search-box {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.status-tag-draft {
+  color: #faad14;
+  background: #fffbe6;
+  border-color: #ffe58f;
+}
+
+.status-tag-released {
+  color: #52c41a;
+  background: #f6ffed;
+  border-color: #b7eb8f;
+}
+
+.status-tag-obsolete {
+  color: #ff4d4f;
+  background: #fff2f0;
+  border-color: #ffccc7;
+}
+
+.compare-added {
+  background-color: #f6ffed;
+}
+
+.compare-removed {
+  background-color: #fff2f0;
+}
+
+.compare-modified {
+  background-color: #e6f7ff;
+}
+
+.stats-card {
+  text-align: center;
+}
+
+.stats-card .stats-value {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.stats-card .stats-label {
+  color: #666;
+  margin-top: 8px;
+}
+
+.bom-item-table .ant-table-tbody > tr > td {
+  padding: 8px 16px;
+}
+
+.change-log-item {
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.change-log-item:last-child {
+  border-bottom: none;
+}
+
+.change-log-time {
+  color: #999;
+  font-size: 12px;
+}
+
+.change-log-action {
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.version-compare-section {
+  margin-bottom: 24px;
+}
+
+.version-compare-section h4 {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f0f0f0;
+}

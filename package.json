@@ -1,0 +1,15 @@
+{
+  "name": "bom-management-system",
+  "version": "1.0.0",
+  "description": "BOM物料清单管理系统 - 支持版本控制和变更追踪",
+  "scripts": {
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
