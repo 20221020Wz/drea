@@ -1,0 +1,17 @@
+"""AI辅助处理模块 - 基于Claude API"""
+
+from .processor import AIProcessor
+from .prompts import (
+    DIMENSION_RECOMMENDATION_PROMPT,
+    GAP_ANALYSIS_PROMPT,
+    KEYWORD_EXPANSION_PROMPT,
+    SPEC_EXTRACTION_PROMPT,
+)
+
+__all__ = [
+    "AIProcessor",
+    "SPEC_EXTRACTION_PROMPT",
+    "DIMENSION_RECOMMENDATION_PROMPT",
+    "GAP_ANALYSIS_PROMPT",
+    "KEYWORD_EXPANSION_PROMPT",
+]

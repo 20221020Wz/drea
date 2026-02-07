@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "comp-shop"
+version = "0.1.0"
+description = "COMP Shop数据采集自动化系统 - 市场部竞品数据采集与Gap分析"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "playwright>=1.40.0",
+    "pandas>=2.1.0",
+    "openpyxl>=3.1.0",
+    "anthropic>=0.40.0",
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "sqlalchemy>=2.0.0",
+    "alembic>=1.13.0",
+    "psycopg2-binary>=2.9.0",
+    "celery[redis]>=5.3.0",
+    "redis>=5.0.0",
+    "httpx>=0.25.0",
+    "pillow>=10.0.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "python-dotenv>=1.0.0",
+    "tenacity>=8.2.0",
+    "fake-useragent>=1.4.0",
+    "aiofiles>=23.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+comp-shop = "comp_shop.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["comp_shop*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
